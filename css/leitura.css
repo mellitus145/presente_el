@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F9;
+}
+
+header {
+    background-color: #FFF;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.back-icon,
+.share-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-detail {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.book-info h2 {
+    color: #4CAF50;
+    margin: 0 0 10px;
+}
+
+.book-info h3 {
+    margin: 0 0 5px;
+}
+
+.book-info p {
+    margin: 5px 0;
+}
+
+.book-meta {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.book-meta span {
+    margin-right: 10px;
+}
+
+.purchase-options {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.purchase-options label {
+    margin-right: 10px;
+}
+
+.purchase-options input {
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.add-to-cart {
+    background-color: #FF5722;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}

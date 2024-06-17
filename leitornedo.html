@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reader</title>
+    <link rel="stylesheet" href="css/leitor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="book-reader">
+            <div class="book-cover">
+                <br>
+                <h1>Medo de não conseguir nada?</h1>
+                <img src="https://i.pinimg.com/originals/b4/47/fe/b447fe49ee80d23aca4f99b08261bb30.jpg" alt="Catzin fofs">
+            </div>
+            <div class="book-content">
+                <button id="prevPage" onclick="prevPage()">&#9664;</button>
+                <div id="page"></div>
+                <button id="nextPage" onclick="nextPage()">&#9654;</button>
+            </div>
+        </div>
+        <div class="music-player">
+            <audio id="audioPlayer" src="/musics/Lofi cat • lofi ambient music _ chill beats to relax_study to.mp3"></audio>
+            <div class="controls">
+                <button id="playButton" onclick="togglePlayPause()">Play</button>
+                <button id="pauseButton" onclick="togglePlayPause()" style="display:none;">Pause</button>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5" onchange="setVolume(this.value)">
+            </div>
+        </div>
+    </div>
+
+
+    <button id="openMenuButton" onclick="toggleMenu()"><img src="img/nerd.png" alt="" width="50px" height="50px"></button>
+
+    <div id="menuOverlay">
+        <div class="menu-content">
+            <h2>Cansada de Ler?</h2>
+            <button onclick="menuAction(1)">Queres Rir?</button>
+            <button onclick="menuAction(2)">Queres Relaxar?</button>
+            <button onclick="menuAction(3)">Queres Aleatoriedade?</button>
+            <a href="index.html"><button href="index.html">Voltar para o Inicio</button></a>
+            <button id="closeMenuButton" onclick="toggleMenu()">Voltar a Ler!</button>
+        </div>
+    </div>
+
+    <script src="js/leitormedo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.book-reader {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.book-cover {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f7f9fc;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-cover img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-cover h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+.book-cover p {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    margin: 0;
+    font-size: 14px;
+}
+
+.book-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#page {
+    width: 250px;
+    height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f7f9fc;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button:focus {
+    outline: none;
+}
+
+#openMenuButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+#openMenuButton img {
+    border-radius: 20px;
+}
+
+#menuOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-content button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-content button:hover {
+    background-color: #0056b3;
+}
+
+#closeMenuButton {
+    background-color: #dc3545;
+}
+
+#closeMenuButton:hover {
+    background-color: #c82333;
+}
+
+.music-player {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.music-player .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.music-player button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.music-player button:hover {
+    background-color: #0056b3;
+}
+
+.music-player input[type="range"] {
+    width: 100px;
+}
